@@ -19,5 +19,17 @@ func main() {
 	fmt.Println("Temp conv")
 	fmt.Println(CToF(BoilingC))
 	fmt.Println(FToC(Fahrenheit(BoilingC)))
+	var celi Celius
+	celi = Celius(CToF(AbsoluteZero))
+	fmt.Println(celi)
+	var fahren Fahrenheit
+	fahren = Fahrenheit(FToC(Fahrenheit(FreezingC)))
+	fmt.Println(fahren)
+	fmt.Println(celi > 0)
+	fmt.Println(fahren == 0)
+	fmt.Println(Fahrenheit(celi) > fahren)
+	var fcc bool
+	fcc = Fahrenheit(celi) > fahren
+	fmt.Println(fcc)
 
 }
